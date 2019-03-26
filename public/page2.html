@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/style.css" />
   <script src="/client.js" defer></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114121901-3"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,16 +17,18 @@
 
   gtag('config', 'UA-114121901-3');
   </script>
+
   <title>SW Demo</title>
 
 </head>
 
 
 <body>
-  <h1>Page 2</h1>
+  <!-- <h1>Home</h1> -->
   <div id="nav">
 
     <button id="installSW">Install SW</button>
+    <button id="A2HS" disabled>A2HS</button>
     <a href="/index.html">Home</a>
     <a href="/page1.html">Page 1</a>
     <a href="/page2.html">Page 2</a>
@@ -34,6 +37,9 @@
     <a href="/page5.html">Page 5</a>
 
   </div>
+
+  <p>beforeinstallprompt: <span id="beforeinstallprompt" /></p>
+  <!-- <p>beforeinstallprompt: <span id="beforeinstallprompt" /></p> -->
 </body>
 
 </html>
